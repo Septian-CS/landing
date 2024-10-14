@@ -209,6 +209,7 @@ strong {
 }
 
 
+
 /*---------------------------------------
   SECTION               
 -----------------------------------------*/
@@ -819,21 +820,21 @@ strong {
   background-color: var(--dark-color);
   position: relative;
   overflow: hidden;
-  padding-bottom: 30px;
+  padding-bottom: 0px;
 }
 
 .site-footer-top {
   background-color: var(--secondary-color);
   background-image: url('../images/nainoa-shizuru-NcdG9mK3PBY-unsplash.jpg');
   background-repeat: no-repeat;
-  margin-bottom: 70px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .site-footer-bottom {
   border-top: 1px solid #1f1c1c;
-  margin-top: 60px;
+  margin-top: 10px;
 }
 
 .site-footer-title {
@@ -1002,14 +1003,9 @@ strong {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .custom-btn {
-    font-size: 14px;
-    padding: 10px 20px;
-  }
-}
 
-@media screen and (max-width: 480px) {
+
+@media screen and (max-width: 768px) {
   h1 {
     font-size: 52px;
   }
@@ -1043,6 +1039,50 @@ strong {
   }
   .services-info {
     text-align: center;
+  }
+
+  .edit {
+    display: flex;
+  }
+
+  .site-header {
+    display: none;
+  }
+
+  .sticky-wrapper {
+    margin-top: 0; /* Hilangkan margin-top */
+    position: static; /* Ubah posisi menjadi static */
+  }
+
+  .navbar {
+    margin-top: 0;
+    width: 100vw; /* Atur navbar agar naik ke posisi header */
+  }
+
+  .body {
+    width: 100vw;
+  }
+
+  .main {
+    width: 100%;
+  }
+
+  .navbar .container {
+    justify-content: space-between
+  }
+
+  .artists-hover {
+    display: none;
+  }
+
+  .login {
+    color: black;
+    font-size: 30px;
+    background-color: white;
+  }
+
+  .btn-login {
+    background-color: white;
   }
 }
 
